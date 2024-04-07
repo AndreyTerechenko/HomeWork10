@@ -1,9 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        String phone = "1234567890";
-        if (phone.length() == 10) {
-            phone = "+7" + phone;
-
-        }
+        // Tak 1
+        String firsyName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firsyName + " " + middleName;
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
+        // Task 2
+        System.out.println("Ф. И. О. сотрудника — " + fullName.toUpperCase());
+        // Task 3
+        fullName = "Иванов Семён Семёнович";
+        fullName = fullName.replace('ё', 'е');
+        System.out.println(fullName);
     }
 }
